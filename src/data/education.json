@@ -10,10 +10,11 @@
       "status": "current",
       "cgpa": 8.56,
       "expectedGraduation": "August 2026",
-      "displayAs": "M.Tech"
+      "displayAs": "Postgraduate Research"
     },
     {
       "degree": "B.Tech",
+      "displayAs": "Bachelor of Technology",
       "field": "Information Technology",
       "university": "Guru Gobind Singh Indraprastha University",
       "universityShort": "GGSIPU",

@@ -60,8 +60,8 @@ export default function ResearchSection() {
                 <p className="text-neutral">{research.thesis.guide}</p>
               </div>
               <div>
-                <p className="text-accent/60 font-mono text-xs mb-1">START DATE</p>
-                <p className="text-neutral">{research.thesis.startDate}</p>
+                <p className="text-accent/60 font-mono text-xs mb-1">TIMELINE</p>
+                <p className="text-neutral">{research.thesis.startDate} – {research.thesis.endDate}</p>
               </div>
               <div>
                 <p className="text-accent/60 font-mono text-xs mb-1">STATUS</p>
@@ -118,7 +118,7 @@ export default function ResearchSection() {
             <div className="space-y-6">
               {[
                 { label: 'Languages', items: research.technicalSkills.programming },
-                { label: 'ML Frameworks', items: research.technicalSkills.mlFrameworks },
+                { label: 'Frameworks', items: research.technicalSkills.Frameworks },
                 { label: 'Techniques', items: research.technicalSkills.techniques },
                 { label: 'Tools', items: research.technicalSkills.tools },
               ].map((skill, idx) => (

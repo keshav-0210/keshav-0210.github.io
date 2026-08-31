@@ -49,8 +49,6 @@ export default function AboutSection() {
             >
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-gradient mb-2">{profile.displayName}</h3>
-                <p className="text-accent font-mono text-sm mb-1">{profile.title}</p>
-                <p className="text-accent/70 font-mono text-xs">{profile.subtitle}</p>
               </div>
 
               <p className="text-neutral/80 mb-6 leading-relaxed">{profile.introduction}</p>
@@ -76,26 +74,21 @@ export default function AboutSection() {
                 {education.education.map((edu, idx) => (
                   <motion.div
                     key={idx}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
-                    className="pl-6 border-l-2 border-accent/30 hover:border-accent transition-colors"
+                    className="p-4 rounded-lg border-2 border-accent/20 bg-dark/30 hover:border-accent/50 transition-colors"
                   >
-                    <div className="flex items-start justify-between mb-1">
-                      <div className="flex items-center gap-2">
-                        {getInstitutionLogo(edu.universityShort || edu.school) && (
-                          <img
-                            src={getInstitutionLogo(edu.universityShort || edu.school)!}
-                            alt={edu.universityShort || edu.school}
-                            className="w-6 h-6 object-contain rounded"
-                          />
-                        )}
-                        <h4 className="font-semibold text-neutral">{edu.displayAs || edu.degree}</h4>
-                      </div>
-                      <span className="text-accent/60 font-mono text-xs">
-                        {edu.startYear}–{edu.endYear}
-                      </span>
+                    <div className="flex items-center gap-2 mb-1">
+                      {getInstitutionLogo(edu.universityShort || edu.school) && (
+                        <img
+                          src={getInstitutionLogo(edu.universityShort || edu.school)!}
+                          alt={edu.universityShort || edu.school}
+                          className="w-6 h-6 object-contain rounded"
+                        />
+                      )}
+                      <h4 className="font-semibold text-neutral">{edu.displayAs || edu.degree}</h4>
                     </div>
                     <p className="text-neutral/70 text-sm mb-2">{edu.universityShort || edu.school}</p>
                     {edu.cgpa && <p className="text-accent/60 text-xs">CGPA: {edu.cgpa}</p>}
@@ -112,8 +105,8 @@ export default function AboutSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { label: 'Students Mentored', value: '80+' },
-                { label: 'CGPA (M.Tech)', value: '8.56' },
-                { label: 'CGPA (B.Tech)', value: '9.02' },
+                { label: 'Postgraduate CGPA', value: '8.56' },
+                { label: 'Undergraduate CGPA', value: '9.02' },
               ].map((fact, idx) => (
                 <motion.div
                   key={idx}

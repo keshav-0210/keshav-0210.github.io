@@ -159,7 +159,7 @@ export default function Home() {
             transition={{ delay: 0.6 }}
             className="text-accent font-mono tracking-widest text-sm"
           >
-            Postgraduate Researcher — IIIT Delhi
+            IIIT DELHI
           </motion.p>
         </motion.div>
 

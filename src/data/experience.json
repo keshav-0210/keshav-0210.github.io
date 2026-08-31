@@ -53,7 +53,8 @@
   "awards": [
     {
       "id": "jtg-poster",
-      "title": "Poster Presentation at JTG Summer School 2026",
+      "title": "Poster Presentation at JTG Summer School",
+      "institution": "IIT DELHI",
       "event": "JTG Summer School 2026",
       "location": "IIT Delhi",
       "year": 2026,
@@ -78,7 +79,7 @@
       "title": "IPPL Cricket Tournament Winner",
       "event": "IPPL Cricket Tournament",
       "year": 2025,
-      "description": "Won inter-college cricket tournament"
+      "description": ""
     }
   ],
   "hackathons": [

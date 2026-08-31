@@ -2,7 +2,8 @@
   "thesis": {
     "title": "Open-World Continual Learning and Novelty Discovery",
     "startDate": "January 2025",
-    "currentStatus": "completed",
+    "endDate": "August 2026",
+    "currentStatus": "Completed",
     "guide": "Dr. Ranjitha Prasad",
     "lab": "IntelliCom Lab, IIIT Delhi",
     "description": "Designing and validating deep learning frameworks for continual model adaptation and novel-class discovery in open-world settings with sparse and evolving data streams.",
@@ -38,11 +39,31 @@
       "name": "Deep Learning",
       "description": "Foundation for all research and project work",
       "relevance": "Core technical skill"
+    },
+    {
+      "name": "Machine Learning",
+      "description": "Applying statistical learning methods across research and projects",
+      "relevance": "Core technical skill"
+    },
+    {
+      "name": "Data Science",
+      "description": "Extracting insights from complex, real-world data streams",
+      "relevance": "Core technical skill"
+    },
+    {
+      "name": "Open-World",
+      "description": "Adapting models to operate reliably beyond fixed, closed datasets",
+      "relevance": "Core focus of thesis"
+    },
+    {
+      "name": "Fairness",
+      "description": "Ensuring equitable model behavior across diverse data distributions",
+      "relevance": "Supporting research area"
     }
   ],
   "technicalSkills": {
     "programming": ["Python", "SQL"],
-    "mlFrameworks": ["PyTorch", "Transformers", "scikit-learn"],
+    "Frameworks": ["PyTorch", "Transformers", "scikit-learn"],
     "techniques": [
       "Regression",
       "Classification",
@@ -50,8 +71,10 @@
       "Cross-Validation",
       "Deep Learning",
       "NLP & GenAI",
-      "Continual Learning"
+      "Continual Learning",
+      "Machine Learning",
+      "Data Science"
     ],
-    "tools": ["NumPy", "Pandas", "NLTK"]
+    "tools": ["NumPy", "Pandas", "NLTK", "Matplotlib", "Jupyter", "Git"]
   }
 }
