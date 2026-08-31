@@ -1,0 +1,44 @@
+{
+  "education": [
+    {
+      "degree": "M.Tech",
+      "field": "Computational Biology",
+      "university": "Indraprastha Institute of Information Technology Delhi",
+      "universityShort": "IIIT Delhi",
+      "startYear": 2024,
+      "endYear": 2026,
+      "status": "current",
+      "cgpa": 8.56,
+      "expectedGraduation": "August 2026",
+      "displayAs": "M.Tech"
+    },
+    {
+      "degree": "B.Tech",
+      "field": "Information Technology",
+      "university": "Bharati Vidyapeeth's College of Engineering",
+      "universityShort": "BVCE",
+      "startYear": 2020,
+      "endYear": 2024,
+      "status": "completed",
+      "cgpa": 9.02
+    },
+    {
+      "degree": "XIIth",
+      "board": "CBSE",
+      "school": "Apeejay School, Pitampura",
+      "startYear": 2019,
+      "endYear": 2020,
+      "status": "completed",
+      "percentage": 76.2
+    },
+    {
+      "degree": "Xth",
+      "board": "CBSE",
+      "school": "Apeejay School, Pitampura",
+      "startYear": 2017,
+      "endYear": 2018,
+      "status": "completed",
+      "percentage": 89.0
+    }
+  ]
+}

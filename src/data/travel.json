@@ -1,0 +1,47 @@
+{
+  "travelMemories": [
+    {
+      "id": "travel-1",
+      "location": "Indian Himalayas",
+      "country": "India",
+      "coordinates": {
+        "lat": 32.2396,
+        "lng": 77.1644
+      },
+      "visitedDates": [
+        "2023-05",
+        "2024-06"
+      ],
+      "description": "Trekking adventures in the mountain ranges",
+      "highlights": [
+        "Scenic mountain views",
+        "Trekking trails",
+        "Natural beauty"
+      ],
+      "category": "mountains"
+    },
+    {
+      "id": "travel-2",
+      "location": "Delhi",
+      "country": "India",
+      "coordinates": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      },
+      "description": "Home base - Studies and work",
+      "highlights": [
+        "IIIT Delhi",
+        "Research lab",
+        "College memories"
+      ],
+      "category": "home"
+    }
+  ],
+  "adventureTypes": [
+    "Trekking",
+    "Mountain exploration",
+    "Nature photography",
+    "Outdoor activities"
+  ],
+  "note": "Add photos and memories by updating location entries"
+}

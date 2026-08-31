@@ -1,0 +1,81 @@
+{
+  "interests": [
+    {
+      "category": "Fitness & Health",
+      "items": [
+        "Strength training",
+        "Gym workouts",
+        "Staying healthy and fit"
+      ],
+      "icon": "💪"
+    },
+    {
+      "category": "Sports",
+      "items": [
+        "Cricket",
+        "Tennis",
+        "Football",
+        "Outdoor games"
+      ],
+      "icon": "⚽"
+    },
+    {
+      "category": "Entertainment",
+      "items": [
+        "IShowSpeed videos",
+        "YouTube content",
+        "OTT streaming",
+        "Console gaming"
+      ],
+      "icon": "🎮"
+    },
+    {
+      "category": "Travel & Adventure",
+      "items": [
+        "Trekking",
+        "Mountain exploration",
+        "Natural beauty",
+        "Traveling"
+      ],
+      "icon": "🏔️"
+    },
+    {
+      "category": "Personal Philosophy",
+      "items": [
+        "Gratitude practice",
+        "Mindfulness",
+        "Astronomy",
+        "Exploring nature"
+      ],
+      "icon": "🌟"
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "Mountain Trekking",
+      "description": "Fascinated by mountain beauty and outdoor adventure",
+      "relatedCategory": "Travel & Adventure"
+    },
+    {
+      "name": "Console Gaming",
+      "description": "Gaming enthusiast with interest in various gaming platforms",
+      "relatedCategory": "Entertainment"
+    },
+    {
+      "name": "Astronomy",
+      "description": "Interest in astronomy and stargazing",
+      "relatedCategory": "Personal Philosophy"
+    },
+    {
+      "name": "Fitness Training",
+      "description": "Dedicated to strength training and maintaining fitness",
+      "relatedCategory": "Fitness & Health"
+    }
+  ],
+  "philosophies": [
+    {
+      "idea": "Gratitude",
+      "description": "We often forget how blessed we all are. Practicing gratitude is important."
+    }
+  ]
+}

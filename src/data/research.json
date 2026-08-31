@@ -1,0 +1,57 @@
+{
+  "thesis": {
+    "title": "Open-World Continual Learning and Novelty Discovery",
+    "startDate": "January 2025",
+    "currentStatus": "ongoing",
+    "guide": "Dr. Ranjitha Prasad",
+    "lab": "IntelliCom Lab, IIIT Delhi",
+    "description": "Designing and validating deep learning frameworks for continual model adaptation and novel-class discovery in open-world settings with sparse and evolving data streams.",
+    "keyFocusAreas": [
+      "Continual Learning",
+      "Novelty Detection",
+      "Open-World Adaptation",
+      "Deep Learning"
+    ]
+  },
+  "researchAreas": [
+    {
+      "name": "Continual Learning",
+      "description": "Enabling models to learn and adapt continuously without catastrophic forgetting",
+      "relevance": "Core focus of thesis"
+    },
+    {
+      "name": "Novelty Discovery",
+      "description": "Detecting and adapting to previously unseen classes in dynamic data streams",
+      "relevance": "Core focus of thesis"
+    },
+    {
+      "name": "Out-of-Distribution Detection",
+      "description": "Identifying when data falls outside the model's training distribution",
+      "relevance": "Supporting research area"
+    },
+    {
+      "name": "Natural Language Processing",
+      "description": "Applied in projects like mental health summarization",
+      "relevance": "Project-based experience"
+    },
+    {
+      "name": "Deep Learning",
+      "description": "Foundation for all research and project work",
+      "relevance": "Core technical skill"
+    }
+  ],
+  "technicalSkills": {
+    "programming": ["Python", "SQL"],
+    "mlFrameworks": ["PyTorch", "Transformers", "scikit-learn"],
+    "techniques": [
+      "Regression",
+      "Classification",
+      "Model Evaluation",
+      "Cross-Validation",
+      "Deep Learning",
+      "NLP & GenAI",
+      "Continual Learning"
+    ],
+    "tools": ["NumPy", "Pandas", "NLTK"]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "social": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/keshav-0210",
+      "icon": "github",
+      "displayOrder": 1
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/keshav-s-934a381b7/",
+      "icon": "linkedin",
+      "displayOrder": 2
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://instagram.com/placeholder",
+      "icon": "instagram",
+      "displayOrder": 3,
+      "status": "placeholder"
+    }
+  ],
+  "contact": {
+    "email": "keshav24214@iiitd.ac.in",
+    "phone": "+91 9999600707",
+    "location": "Delhi, India",
+    "timezone": "IST (UTC+5:30)"
+  }
+}

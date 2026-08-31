@@ -1,0 +1,56 @@
+{
+  "projects": [
+    {
+      "id": "mental-health",
+      "title": "Mental Health Summarization",
+      "startDate": "January 2025",
+      "endDate": "April 2025",
+      "guide": "Dr. Md. Shad Akhtar",
+      "teamSize": 3,
+      "problem": "Counseling dialogues are lengthy and difficult to summarize efficiently",
+      "approach": "Built and evaluated an NLP model to generate concise summaries of counseling dialogues, using BLEU and BERT scores to benchmark model performance.",
+      "tech": ["PyTorch", "Transformers", "NLP"],
+      "github": "https://github.com/keshav-0210",
+      "status": "completed"
+    },
+    {
+      "id": "speaker-separation",
+      "title": "Speaker-Source Separation",
+      "startDate": "August 2024",
+      "endDate": "November 2024",
+      "guide": "Dr. Vinayak Abrol",
+      "teamSize": 5,
+      "problem": "Isolating individual speakers from mixed audio signals",
+      "approach": "Developed an end-to-end machine learning pipeline for speaker source separation by applying signal-processing methods to isolate signal from noise.",
+      "tech": ["Signal Processing", "Deep Learning", "Python"],
+      "github": "https://github.com/keshav-0210",
+      "status": "completed"
+    },
+    {
+      "id": "stress-detection",
+      "title": "Stress Detection",
+      "startDate": "January 2024",
+      "endDate": "May 2024",
+      "guide": "Dr. Prakhar Priyadarshi",
+      "teamSize": 3,
+      "problem": "Classifying stress levels from Heart Rate Variability (HRV) data",
+      "approach": "Built a supervised learning pipeline to classify Stress/No-Stress from HRV data, including feature engineering, model selection, and cross-validation to maximize predictive accuracy.",
+      "tech": ["scikit-learn", "Feature Engineering", "Machine Learning"],
+      "github": "https://github.com/keshav-0210",
+      "status": "completed"
+    },
+    {
+      "id": "bid-smart",
+      "title": "Bid Smart",
+      "startDate": "August 2023",
+      "endDate": "November 2023",
+      "guide": "Dr. Prakhar Priyadarshi",
+      "teamSize": 1,
+      "problem": "Optimizing fantasy football team selection using historical data",
+      "approach": "Designed a data-driven recommendation tool to suggest optimal player picks for a fantasy football team using historical performance data and rule-based scoring logic.",
+      "tech": ["Data Analysis", "Recommendation Systems", "Python"],
+      "github": "https://github.com/keshav-0210",
+      "status": "completed"
+    }
+  ]
+}

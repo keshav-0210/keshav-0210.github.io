@@ -1,0 +1,93 @@
+{
+  "experience": [
+    {
+      "id": "lightmetrics",
+      "title": "Engineering Intern",
+      "company": "LightMetrics Technologies Pvt. Ltd.",
+      "startDate": "December 2025",
+      "endDate": "March 2026",
+      "guide": "Mr. Nrupatunga Sahadeva",
+      "description": "Thesis collaboration focused on continual adaptation and novel-class detection in dynamic, real-world data streams.",
+      "highlights": [
+        "Presented research progress to company stakeholders",
+        "Conducted research on continual adaptation and recognition of previously unseen classes",
+        "Built data-driven models to support production decision-making"
+      ],
+      "type": "internship"
+    }
+  ],
+  "teaching": [
+    {
+      "id": "ta-dti",
+      "course": "Design Thinking & Innovation",
+      "institution": "IIIT Delhi",
+      "startDate": "July 2024",
+      "endDate": "May 2026",
+      "description": "Mentored 80+ students; assisted in project reviews and analytical evaluation of assignments.",
+      "role": "Teaching Assistant",
+      "type": "ta"
+    },
+    {
+      "id": "ta-entrepr",
+      "course": "Fundamentals of Entrepreneurship",
+      "institution": "IIIT Delhi",
+      "startDate": "July 2024",
+      "endDate": "May 2026",
+      "semesters": 2,
+      "description": "Mentored 30+ students, providing academic mentorship and structured feedback.",
+      "role": "Teaching Assistant",
+      "type": "ta"
+    },
+    {
+      "id": "ta-entfin",
+      "course": "Entrepreneurial Finance",
+      "institution": "IIIT Delhi",
+      "startDate": "July 2024",
+      "endDate": "May 2026",
+      "semesters": 2,
+      "description": "Mentored 20+ students; supported coursework and assignment evaluation, strengthening financial and quantitative reasoning skills.",
+      "role": "Teaching Assistant",
+      "type": "ta"
+    }
+  ],
+  "awards": [
+    {
+      "id": "dist-ta",
+      "title": "Distinguished Teaching Assistant Award",
+      "institution": "IIIT Delhi",
+      "year": 2026,
+      "description": "Recognition for outstanding contribution to student mentorship and course support"
+    },
+    {
+      "id": "nom-ta",
+      "title": "Nominated for Best Teaching Assistant Award",
+      "institution": "IIIT Delhi",
+      "year": 2026,
+      "description": ""
+    },
+    {
+      "id": "jtg-poster",
+      "title": "Poster Presentation at JTG Summer School 2026",
+      "event": "JTG Summer School 2026",
+      "location": "IIT Delhi",
+      "year": 2026,
+      "description": "Presented research work to academic community"
+    },
+    {
+      "id": "ippl-cricket",
+      "title": "IPPL Cricket Tournament Winner",
+      "event": "IPPL Cricket Tournament",
+      "year": 2024,
+      "description": "Won inter-college cricket tournament"
+    }
+  ],
+  "hackathons": [
+    {
+      "id": "mastercard",
+      "title": "MasterCard Hackathon",
+      "year": 2025,
+      "status": "result-awaited",
+      "description": "Participated in innovation hackathon"
+    }
+  ]
+}
