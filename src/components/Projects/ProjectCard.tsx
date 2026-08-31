@@ -35,7 +35,7 @@ export default function ProjectsSection() {
         >
           {/* Section Title */}
           <motion.h2 variants={itemVariants} className="text-4xl md:text-6xl font-bold mb-16">
-            <span className="text-gradient">WHAT I'VE</span> <span className="text-tertiary">BUILT</span>
+            <span className="text-gradient">WHAT I&apos;VE</span> <span className="text-tertiary">BUILT</span>
           </motion.h2>
 
           {/* Projects Grid */}

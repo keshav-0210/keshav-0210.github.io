@@ -47,7 +47,7 @@ export default function ConnectSection() {
         >
           {/* Section Title */}
           <motion.h2 variants={itemVariants} className="text-4xl md:text-6xl font-bold mb-16 text-center">
-            <span className="text-gradient">LET'S</span> <span className="text-accent">CONNECT</span>
+            <span className="text-gradient">LET&apos;S</span> <span className="text-accent">CONNECT</span>
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -123,7 +123,7 @@ export default function ConnectSection() {
             className="mt-20 pt-20 border-t border-accent/20 text-center"
           >
             <p className="text-neutral/80 mb-8">
-              Whether you want to discuss research, collaborate on a project, or just say hi—I'd love to hear from you.
+              Whether you want to discuss research, collaborate on a project, or just say hi&mdash;I&apos;d love to hear from you.
             </p>
             <motion.a
               href={`mailto:${profile.email}`}

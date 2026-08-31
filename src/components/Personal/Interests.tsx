@@ -133,7 +133,7 @@ export default function PersonalSection() {
                   transition={{ delay: idx * 0.1 }}
                   className="p-8 rounded-lg border-2 border-secondary/30 bg-dark/50 italic"
                 >
-                  <p className="text-2xl text-neutral/90 mb-3">"{philosophy.idea}"</p>
+                  <p className="text-2xl text-neutral/90 mb-3">&quot;{philosophy.idea}&quot;</p>
                   <p className="text-neutral/70">{philosophy.description}</p>
                 </motion.div>
               ))}
