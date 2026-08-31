@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import profile from '@/data/profile.json';
 import social from '@/data/social.json';
+import VisitCounter from '@/components/VisitCounter';
 
 export default function ConnectSection() {
   const containerVariants = {
@@ -133,6 +134,7 @@ export default function ConnectSection() {
             >
               SEND ME AN EMAIL
             </motion.a>
+            <VisitCounter />
           </motion.div>
         </motion.div>
       </div>

@@ -25,6 +25,12 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem('keshav_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`,
           }}
         />
+        {/* GoatCounter visit analytics (free, no cookies) */}
+        <script
+          data-goatcounter="https://keshav-world.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        />
       </head>
       <body className="bg-primary text-neutral overflow-x-hidden">
         {children}
