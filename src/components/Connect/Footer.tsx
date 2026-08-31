@@ -28,7 +28,6 @@ export default function ConnectSection() {
 
   const getSocialIcon = (platform: string) => {
     const iconMap: { [key: string]: string } = {
-      github: '🐙',
       linkedin: '💼',
       instagram: '📸',
       twitter: '𝕏',
@@ -104,7 +103,11 @@ export default function ConnectSection() {
                       }}
                       className="flex items-center gap-4 p-4 rounded-lg border-2 border-accent/20 bg-dark/50 hover:border-accent/50 transition-colors"
                     >
-                      <span className="text-2xl">{getSocialIcon(link.platform)}</span>
+                      {link.platform.toLowerCase() === 'linkedin' ? (
+                        <img src="/images/logos/linkdin.jpg" alt="LinkedIn" className="w-6 h-6 object-contain" />
+                      ) : (
+                        <span className="text-2xl">{getSocialIcon(link.platform)}</span>
+                      )}
                       <div className="flex-1">
                         <p className="font-semibold text-neutral">{link.platform}</p>
                         <p className="text-accent/60 font-mono text-xs truncate">

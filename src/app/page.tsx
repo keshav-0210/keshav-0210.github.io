@@ -114,14 +114,17 @@ export default function Home() {
               transition={{ duration: 3, repeat: Infinity }}
               className="absolute inset-2 rounded-full border-2 border-accent"
             />
-            <div className="absolute inset-4 rounded-full bg-primary border-2 border-accent/50 flex items-center justify-center">
-              <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-              >
-                <div className="text-3xl font-bold text-gradient">K</div>
-              </motion.div>
-            </div>
+            <motion.div
+              animate={{ rotate: -360 }}
+              transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+              className="absolute inset-4 rounded-full bg-primary border-2 border-accent/50 flex items-center justify-center overflow-hidden"
+            >
+              <img
+                src="/images/profile.jpg"
+                alt="Keshav Sharma"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </motion.div>
           </motion.div>
         </motion.div>
 

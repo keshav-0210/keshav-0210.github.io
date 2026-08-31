@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import profile from '@/data/profile.json';
 import education from '@/data/education.json';
+import { getInstitutionLogo } from '@/lib/logos';
 
 export default function AboutSection() {
   const containerVariants = {
@@ -82,7 +83,16 @@ export default function AboutSection() {
                     className="pl-6 border-l-2 border-accent/30 hover:border-accent transition-colors"
                   >
                     <div className="flex items-start justify-between mb-1">
-                      <h4 className="font-semibold text-neutral">{edu.displayAs || edu.degree}</h4>
+                      <div className="flex items-center gap-2">
+                        {getInstitutionLogo(edu.universityShort || edu.school) && (
+                          <img
+                            src={getInstitutionLogo(edu.universityShort || edu.school)!}
+                            alt={edu.universityShort || edu.school}
+                            className="w-6 h-6 object-contain rounded"
+                          />
+                        )}
+                        <h4 className="font-semibold text-neutral">{edu.displayAs || edu.degree}</h4>
+                      </div>
                       <span className="text-accent/60 font-mono text-xs">
                         {edu.startYear}–{edu.endYear}
                       </span>

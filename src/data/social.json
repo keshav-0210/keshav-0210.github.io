@@ -1,22 +1,16 @@
 {
   "social": [
     {
-      "platform": "GitHub",
-      "url": "https://github.com/keshav-0210",
-      "icon": "github",
-      "displayOrder": 1
-    },
-    {
       "platform": "LinkedIn",
       "url": "https://www.linkedin.com/in/keshav-s-934a381b7/",
       "icon": "linkedin",
-      "displayOrder": 2
+      "displayOrder": 1
     },
     {
       "platform": "Instagram",
       "url": "https://instagram.com/placeholder",
       "icon": "instagram",
-      "displayOrder": 3,
+      "displayOrder": 2,
       "status": "placeholder"
     }
   ],

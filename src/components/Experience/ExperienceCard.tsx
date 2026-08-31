@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import experience from '@/data/experience.json';
+import { getInstitutionLogo } from '@/lib/logos';
 
 export default function ExperienceSection() {
   const containerVariants = {
@@ -54,7 +55,12 @@ export default function ExperienceSection() {
                   <div className="flex items-start justify-between mb-2">
                     <div>
                       <h4 className="text-xl font-semibold text-neutral">{exp.title}</h4>
-                      <p className="text-tertiary font-mono text-sm">{exp.company}</p>
+                      <div className="flex items-center gap-2">
+                        {getInstitutionLogo(exp.company) && (
+                          <img src={getInstitutionLogo(exp.company)!} alt={exp.company} className="w-5 h-5 object-contain rounded" />
+                        )}
+                        <p className="text-tertiary font-mono text-sm">{exp.company}</p>
+                      </div>
                     </div>
                     <span className="text-accent/60 font-mono text-xs">
                       {exp.startDate} – {exp.endDate}
@@ -89,7 +95,12 @@ export default function ExperienceSection() {
                   className="pl-6 border-l-4 border-secondary/50 hover:border-secondary transition-colors"
                 >
                   <h4 className="text-lg font-semibold text-neutral mb-1">{ta.course}</h4>
-                  <p className="text-secondary font-mono text-sm mb-2">{ta.institution}</p>
+                  <div className="flex items-center gap-2 mb-2">
+                    {getInstitutionLogo(ta.institution) && (
+                      <img src={getInstitutionLogo(ta.institution)!} alt={ta.institution} className="w-5 h-5 object-contain rounded" />
+                    )}
+                    <p className="text-secondary font-mono text-sm">{ta.institution}</p>
+                  </div>
                   <p className="text-neutral/70 text-sm mb-2">{ta.description}</p>
                   <p className="text-accent/60 font-mono text-xs">
                     {ta.startDate} – {ta.endDate} {ta.semesters && `• ${ta.semesters} semesters`}

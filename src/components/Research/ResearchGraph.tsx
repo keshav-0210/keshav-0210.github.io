@@ -46,7 +46,10 @@ export default function ResearchSection() {
           >
             <div className="mb-6">
               <h3 className="text-3xl font-bold text-secondary mb-2">{research.thesis.title}</h3>
-              <p className="text-accent/70 font-mono text-sm">{research.thesis.lab}</p>
+              <div className="flex items-center gap-2">
+                <img src="/images/logos/iiitd.jpg" alt="IIIT Delhi" className="w-6 h-6 object-contain rounded" />
+                <p className="text-accent/70 font-mono text-sm">{research.thesis.lab}</p>
+              </div>
             </div>
 
             <p className="text-neutral/80 mb-6">{research.thesis.description}</p>
