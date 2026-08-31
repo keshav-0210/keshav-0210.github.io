@@ -37,6 +37,18 @@ export default function Home() {
     };
   }, [play]);
 
+  if (process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true') {
+    return (
+      <main className="min-h-screen flex flex-col items-center justify-center bg-primary text-neutral px-6 text-center">
+        <div className="w-16 h-16 border-2 border-accent rounded-full border-t-transparent animate-spin mb-8" />
+        <h1 className="text-3xl md:text-5xl font-bold text-gradient mb-4">Temporarily Offline</h1>
+        <p className="text-neutral/70 max-w-md">
+          This site is currently down for maintenance. Please check back shortly.
+        </p>
+      </main>
+    );
+  }
+
   return (
     <main className="bg-primary text-neutral overflow-x-hidden">
       {/* Background Elements */}
