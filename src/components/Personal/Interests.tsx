@@ -90,7 +90,7 @@ export default function PersonalSection() {
                   
                   <p className="text-neutral/80 mb-4">{memory.description}</p>
                   
-                  {memory.visitedDates && (
+                  {memory.visitedDates && memory.visitedDates.length > 0 && (
                     <div className="mb-4 pt-4 border-t border-accent/20">
                       <p className="text-accent/60 font-mono text-xs mb-2">VISITED</p>
                       <div className="flex flex-wrap gap-2">
@@ -103,7 +103,7 @@ export default function PersonalSection() {
                     </div>
                   )}
                   
-                  {memory.highlights && (
+                  {memory.highlights && memory.highlights.length > 0 && (
                     <div>
                       <p className="text-accent/60 font-mono text-xs mb-2">HIGHLIGHTS</p>
                       <ul className="space-y-1">

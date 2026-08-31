@@ -1,40 +1,58 @@
 {
   "travelMemories": [
     {
-      "id": "travel-1",
-      "location": "Indian Himalayas",
-      "country": "India",
-      "coordinates": {
-        "lat": 32.2396,
-        "lng": 77.1644
-      },
-      "visitedDates": [
-        "2023-05",
-        "2024-06"
-      ],
-      "description": "Trekking adventures in the mountain ranges",
-      "highlights": [
-        "Scenic mountain views",
-        "Trekking trails",
-        "Natural beauty"
-      ],
-      "category": "mountains"
+      "id": "travel-australia",
+      "location": "Australia",
+      "country": "Australia",
+      "visitedDates": ["2019"],
+      "description": "Details coming soon.",
+      "highlights": [],
+      "category": "placeholder"
     },
     {
-      "id": "travel-2",
-      "location": "Delhi",
+      "id": "travel-dubai",
+      "location": "Dubai",
+      "country": "UAE",
+      "visitedDates": ["2022"],
+      "description": "Details coming soon.",
+      "highlights": [],
+      "category": "placeholder"
+    },
+    {
+      "id": "travel-kerala",
+      "location": "Kerala",
       "country": "India",
-      "coordinates": {
-        "lat": 28.7041,
-        "lng": 77.1025
-      },
-      "description": "Home base - Studies and work",
-      "highlights": [
-        "IIIT Delhi",
-        "Research lab",
-        "College memories"
-      ],
-      "category": "home"
+      "visitedDates": ["2023"],
+      "description": "Details coming soon.",
+      "highlights": [],
+      "category": "placeholder"
+    },
+    {
+      "id": "travel-jaipur",
+      "location": "Jaipur",
+      "country": "India",
+      "visitedDates": ["2024"],
+      "description": "Details coming soon.",
+      "highlights": [],
+      "category": "placeholder"
+    },
+    {
+      "id": "travel-singapore",
+      "location": "Singapore",
+      "country": "Singapore",
+      "visitedDates": ["2026"],
+      "description": "Details coming soon.",
+      "highlights": [],
+      "category": "placeholder"
+    },
+    {
+      "id": "travel-jim-corbett",
+      "location": "Jim Corbett",
+      "country": "India",
+      "visitedDates": [],
+      "description": "Details coming soon.",
+      "highlights": [],
+      "category": "placeholder"
     }
   ],
   "adventureTypes": [

@@ -8,6 +8,7 @@ import ResearchSection from '@/components/Research/ResearchGraph';
 import ProjectsSection from '@/components/Projects/ProjectCard';
 import ExperienceSection from '@/components/Experience/ExperienceCard';
 import PersonalSection from '@/components/Personal/Interests';
+import PictureCarousel from '@/components/Pictures/Carousel';
 import ConnectSection from '@/components/Connect/Footer';
 import AriaAssistant from '@/components/ARIA/AriaAssistant';
 import { useSound } from '@/hooks/useSound';
@@ -211,6 +212,7 @@ export default function Home() {
           <ProjectsSection />
           <ExperienceSection />
           <PersonalSection />
+          <PictureCarousel />
           <ConnectSection />
           <AriaAssistant />
         </>
