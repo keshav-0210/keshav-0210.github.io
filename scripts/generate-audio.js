@@ -9,8 +9,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// Create public/sounds directory if it doesn't exist
-const soundsDir = path.join(__dirname, 'public', 'sounds');
+// Create public/sounds directory if it doesn't exist (relative to project root, not this script's folder)
+const soundsDir = path.join(__dirname, '..', 'public', 'sounds');
 if (!fs.existsSync(soundsDir)) {
   fs.mkdirSync(soundsDir, { recursive: true });
   console.log('✓ Created sounds directory');
