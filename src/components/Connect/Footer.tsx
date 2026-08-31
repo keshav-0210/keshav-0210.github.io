@@ -135,6 +135,15 @@ export default function ConnectSection() {
               SEND ME AN EMAIL
             </motion.a>
             <VisitCounter />
+            <div className="mt-6 flex justify-center">
+              <a href="https://info.flagcounter.com/UhvV" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://s01.flagcounter.com/map/UhvV/size_s/txt_000000/border_CCCCCC/pageviews_0/viewers_0/flags_0/"
+                  alt="Visitor world map by country"
+                  className="rounded-md border border-accent/20"
+                />
+              </a>
+            </div>
           </motion.div>
         </motion.div>
       </div>
