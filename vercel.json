@@ -1,6 +1,3 @@
-# Vercel Deployment Config
-# https://vercel.com/docs/projects/project-configuration
-
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
