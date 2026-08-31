@@ -9,6 +9,7 @@ import ProjectsSection from '@/components/Projects/ProjectCard';
 import ExperienceSection from '@/components/Experience/ExperienceCard';
 import PersonalSection from '@/components/Personal/Interests';
 import ConnectSection from '@/components/Connect/Footer';
+import AriaAssistant from '@/components/ARIA/AriaAssistant';
 import { useSound } from '@/hooks/useSound';
 import { SOUNDS } from '@/lib/constants';
 
@@ -207,6 +208,7 @@ export default function Home() {
           <ExperienceSection />
           <PersonalSection />
           <ConnectSection />
+          <AriaAssistant />
         </>
       )}
     </main>
