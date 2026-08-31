@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import personal from '@/data/personal.json';
 import travel from '@/data/travel.json';
+import photosData from '@/data/photos.json';
 
 export default function PersonalSection() {
   const containerVariants = {
@@ -138,6 +139,35 @@ export default function PersonalSection() {
                 </motion.div>
               ))}
             </div>
+          </motion.div>
+
+          {/* Photo Gallery */}
+          <motion.div variants={itemVariants} className="mt-20">
+            <h3 className="text-2xl font-bold text-accent mb-10">Photo Gallery</h3>
+            {photosData.photos.length === 0 ? (
+              <div className="p-10 rounded-lg border-2 border-dashed border-accent/20 text-center text-neutral/50">
+                Photos coming soon.
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {photosData.photos.map((photo: any, idx: number) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.05 }}
+                    whileHover={{ scale: 1.03 }}
+                    className="overflow-hidden rounded-lg border-2 border-accent/20 hover:border-accent/50 transition-all"
+                  >
+                    <img src={photo.src} alt={photo.alt || photo.caption || 'Photo'} className="w-full h-48 object-cover" />
+                    {photo.caption && (
+                      <p className="px-3 py-2 text-xs text-neutral/70 bg-dark/60">{photo.caption}</p>
+                    )}
+                  </motion.div>
+                ))}
+              </div>
+            )}
           </motion.div>
         </motion.div>
       </div>

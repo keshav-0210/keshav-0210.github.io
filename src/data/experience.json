@@ -52,20 +52,6 @@
   ],
   "awards": [
     {
-      "id": "dist-ta",
-      "title": "Distinguished Teaching Assistant Award",
-      "institution": "IIIT Delhi",
-      "year": 2026,
-      "description": "Recognition for outstanding contribution to student mentorship and course support"
-    },
-    {
-      "id": "nom-ta",
-      "title": "Nominated for Best Teaching Assistant Award",
-      "institution": "IIIT Delhi",
-      "year": 2026,
-      "description": ""
-    },
-    {
       "id": "jtg-poster",
       "title": "Poster Presentation at JTG Summer School 2026",
       "event": "JTG Summer School 2026",
@@ -74,10 +60,24 @@
       "description": "Presented research work to academic community"
     },
     {
+      "id": "dist-ta",
+      "title": "Distinguished Teaching Assistant Award",
+      "institution": "IIIT Delhi",
+      "year": 2025,
+      "description": "Recognition for outstanding contribution to student mentorship and course support"
+    },
+    {
+      "id": "nom-ta",
+      "title": "Nominated for Best Teaching Assistant Award",
+      "institution": "IIIT Delhi",
+      "year": 2025,
+      "description": ""
+    },
+    {
       "id": "ippl-cricket",
       "title": "IPPL Cricket Tournament Winner",
       "event": "IPPL Cricket Tournament",
-      "year": 2024,
+      "year": 2025,
       "description": "Won inter-college cricket tournament"
     }
   ],
@@ -85,7 +85,7 @@
     {
       "id": "mastercard",
       "title": "MasterCard Hackathon",
-      "year": 2025,
+      "year": 2026,
       "status": "result-awaited",
       "description": "Participated in innovation hackathon"
     }

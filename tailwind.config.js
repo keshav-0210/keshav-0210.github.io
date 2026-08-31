@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ['selector', '[data-theme="dark"]'],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,12 +9,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0A1428',
-        accent: '#00D9FF',
-        secondary: '#9D4EDD',
-        tertiary: '#FF6B35',
-        neutral: '#F0F4F8',
-        dark: '#0A0E27',
+        primary: 'rgb(var(--primary-rgb) / <alpha-value>)',
+        accent: 'rgb(var(--accent-rgb) / <alpha-value>)',
+        secondary: 'rgb(var(--secondary-rgb) / <alpha-value>)',
+        tertiary: 'rgb(var(--tertiary-rgb) / <alpha-value>)',
+        neutral: 'rgb(var(--neutral-rgb) / <alpha-value>)',
+        dark: 'rgb(var(--dark-rgb) / <alpha-value>)',
       },
       fontFamily: {
         sans: ['var(--font-inter)'],

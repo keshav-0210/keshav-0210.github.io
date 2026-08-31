@@ -80,21 +80,6 @@ export default function ProjectsSection() {
                     ))}
                   </div>
                 </div>
-
-                {/* Links */}
-                <div className="flex gap-4">
-                  {project.github && (
-                    <motion.a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      className="text-accent hover:text-accent/80 text-sm font-mono flex items-center gap-2"
-                    >
-                      → GitHub
-                    </motion.a>
-                  )}
-                </div>
               </motion.div>
             ))}
           </div>

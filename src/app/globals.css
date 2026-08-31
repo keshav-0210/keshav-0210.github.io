@@ -5,13 +5,38 @@
 @tailwind utilities;
 
 :root {
+  --primary-rgb: 10 20 40;
+  --accent-rgb: 0 217 255;
+  --secondary-rgb: 157 78 221;
+  --tertiary-rgb: 255 107 53;
+  --neutral-rgb: 240 244 248;
+  --dark-rgb: 10 14 39;
+  --border: rgba(0, 217, 255, 0.2);
+
   --primary: #0A1428;
   --accent: #00D9FF;
   --secondary: #9D4EDD;
   --tertiary: #FF6B35;
   --neutral: #F0F4F8;
   --dark: #0A0E27;
-  --border: rgba(0, 217, 255, 0.2);
+}
+
+/* Light theme overrides — flip background/text pairs, deepen accents for contrast on white */
+[data-theme='light'] {
+  --primary-rgb: 247 250 252;
+  --accent-rgb: 0 145 173;
+  --secondary-rgb: 106 27 154;
+  --tertiary-rgb: 204 85 0;
+  --neutral-rgb: 10 20 40;
+  --dark-rgb: 255 255 255;
+  --border: rgba(0, 145, 173, 0.25);
+
+  --primary: #F7FAFC;
+  --accent: #0091AD;
+  --secondary: #6A1B9A;
+  --tertiary: #CC5500;
+  --neutral: #0A1428;
+  --dark: #FFFFFF;
 }
 
 * {

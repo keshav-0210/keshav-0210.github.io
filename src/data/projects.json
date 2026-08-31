@@ -9,8 +9,7 @@
       "teamSize": 3,
       "problem": "Counseling dialogues are lengthy and difficult to summarize efficiently",
       "approach": "Built and evaluated an NLP model to generate concise summaries of counseling dialogues, using BLEU and BERT scores to benchmark model performance.",
-      "tech": ["PyTorch", "Transformers", "NLP"],
-      "github": "https://github.com/keshav-0210",
+      "tech": ["PyTorch", "Transformers", "NLP", "BERT", "Hugging Face", "BLEU Score", "Python"],
       "status": "completed"
     },
     {
@@ -22,8 +21,7 @@
       "teamSize": 5,
       "problem": "Isolating individual speakers from mixed audio signals",
       "approach": "Developed an end-to-end machine learning pipeline for speaker source separation by applying signal-processing methods to isolate signal from noise.",
-      "tech": ["Signal Processing", "Deep Learning", "Python"],
-      "github": "https://github.com/keshav-0210",
+      "tech": ["Signal Processing", "Deep Learning", "Python", "PyTorch", "Librosa", "Audio Processing", "NumPy"],
       "status": "completed"
     },
     {
@@ -35,8 +33,7 @@
       "teamSize": 3,
       "problem": "Classifying stress levels from Heart Rate Variability (HRV) data",
       "approach": "Built a supervised learning pipeline to classify Stress/No-Stress from HRV data, including feature engineering, model selection, and cross-validation to maximize predictive accuracy.",
-      "tech": ["scikit-learn", "Feature Engineering", "Machine Learning"],
-      "github": "https://github.com/keshav-0210",
+      "tech": ["scikit-learn", "Feature Engineering", "Machine Learning", "Python", "Pandas", "Cross-Validation", "HRV Analysis"],
       "status": "completed"
     },
     {
@@ -48,8 +45,7 @@
       "teamSize": 1,
       "problem": "Optimizing fantasy football team selection using historical data",
       "approach": "Designed a data-driven recommendation tool to suggest optimal player picks for a fantasy football team using historical performance data and rule-based scoring logic.",
-      "tech": ["Data Analysis", "Recommendation Systems", "Python"],
-      "github": "https://github.com/keshav-0210",
+      "tech": ["Data Analysis", "Recommendation Systems", "Python", "Pandas", "NumPy", "Rule-Based Systems", "Data Visualization"],
       "status": "completed"
     }
   ]

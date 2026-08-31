@@ -134,16 +134,6 @@ export default function ConnectSection() {
               SEND ME AN EMAIL
             </motion.a>
           </motion.div>
-
-          {/* Footer */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-20 pt-10 border-t border-accent/20 text-center text-neutral/60 font-mono text-xs"
-          >
-            <p>
-              Built with React + Next.js • Designed with passion • 2025
-            </p>
-          </motion.div>
         </motion.div>
       </div>
     </section>

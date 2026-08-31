@@ -2,7 +2,7 @@
   "thesis": {
     "title": "Open-World Continual Learning and Novelty Discovery",
     "startDate": "January 2025",
-    "currentStatus": "ongoing",
+    "currentStatus": "completed",
     "guide": "Dr. Ranjitha Prasad",
     "lab": "IntelliCom Lab, IIIT Delhi",
     "description": "Designing and validating deep learning frameworks for continual model adaptation and novel-class discovery in open-world settings with sparse and evolving data streams.",
