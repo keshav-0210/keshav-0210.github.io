@@ -103,7 +103,9 @@ export default function ExperienceSection() {
                   </div>
                   <p className="text-neutral/70 text-sm mb-2">{ta.description}</p>
                   <p className="text-accent/60 font-mono text-xs">
-                    {ta.startDate} – {ta.endDate} {ta.semesters && `• ${ta.semesters} semesters`}
+                    {ta.startDate} – {ta.endDate}
+					{ta.semester && ` • ${ta.semester}`}
+					{ta.semesters && ` • ${ta.semesters} semesters`}
                   </p>
                 </motion.div>
               ))}
