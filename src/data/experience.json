@@ -21,8 +21,9 @@
       "id": "ta-dti",
       "course": "Design Thinking & Innovation",
       "institution": "IIIT Delhi",
-      "startDate": "July 2024",
-      "endDate": "May 2026",
+      "startDate": "May 2025",
+      "endDate": "July 2025",
+	  "semesters": "Summer semester"
       "description": "Mentored 80+ students; assisted in project reviews and analytical evaluation of assignments.",
       "role": "Teaching Assistant",
       "type": "ta"
