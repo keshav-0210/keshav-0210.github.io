@@ -1,6 +1,6 @@
 // Sound file paths
 export const SOUNDS = {
-  startup: '/sounds/startup.wav',
+  startup: '/sounds/kai-startup.mp3',
   click: '/sounds/click.wav',
   transition: '/sounds/transition.wav',
   ambient: '/sounds/ambient.wav',

@@ -171,11 +171,11 @@ export default function AriaAssistant() {
                 value={voiceName}
                 onChange={(event) => setVoiceName(event.target.value)}
                 aria-label="Assistant voice"
-                className="mx-3 mb-3 w-[calc(100%-1.5rem)] bg-transparent text-xs text-neutral/70 focus:outline-none"
+                className="mx-3 mb-3 w-[calc(100%-1.5rem)] rounded border border-accent/30 bg-dark px-2 py-1 text-xs text-neutral focus:outline-none"
               >
-                <option value="">Default device voice</option>
+                <option value="" className="bg-dark text-neutral">Default device voice</option>
                 {voices.map((voice) => (
-                  <option key={voice.name} value={voice.name}>{voice.name}</option>
+                  <option key={voice.name} value={voice.name} className="bg-dark text-neutral">{voice.name}</option>
                 ))}
               </select>
             )}

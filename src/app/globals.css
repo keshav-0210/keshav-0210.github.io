@@ -57,6 +57,11 @@ body {
   overflow-x: hidden;
 }
 
+select option {
+  background-color: var(--dark);
+  color: var(--neutral);
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 12px;
