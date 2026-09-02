@@ -39,7 +39,7 @@ export default function PictureCarousel() {
         <motion.div
           className="flex gap-6 w-max will-change-transform"
           animate={{ x: ['0%', '-50%'] }}
-		  transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
+		  transition={{ duration: 45, repeat: Infinity, ease: 'linear' }}
         >
           {track.map((img, idx) => (
             <div
