@@ -36,7 +36,7 @@ export const SECTIONS = {
   CONNECT: 'connect',
 } as const;
 
-// ARIA Assistant commands
+// KAI Assistant commands
 export const ARIA_COMMANDS = {
   OPEN_ABOUT: 'OPEN_ABOUT',
   OPEN_RESEARCH: 'OPEN_RESEARCH',

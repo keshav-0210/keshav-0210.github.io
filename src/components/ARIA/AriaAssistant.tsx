@@ -12,7 +12,7 @@ interface Message {
 
 const WELCOME: Message = {
   role: 'aria',
-  text: "Welcome to my page! I'm ARIA. Ask me anything about Keshav — his research, projects, experience, or how to reach him.",
+  text: "Welcome to my page! I'm KAI. Ask me anything about Keshav — his research, projects, experience, or how to reach him.",
 };
 
 export default function AriaAssistant() {
@@ -87,7 +87,7 @@ export default function AriaAssistant() {
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.95 }}
         className="fixed bottom-8 left-8 z-40 flex h-14 w-14 items-center justify-center rounded-full border-2 border-accent/60 bg-primary text-2xl text-accent shadow-[0_0_25px_rgba(0,217,255,0.4)] hover:border-accent hover:bg-accent/10"
-        aria-label="Open ARIA assistant"
+        aria-label="Open KAI assistant"
       >
         {isOpen ? '✕' : '🤖'}
       </motion.button>
@@ -105,7 +105,7 @@ export default function AriaAssistant() {
             <div className="flex items-center justify-between border-b border-accent/20 px-4 py-3">
               <div className="flex items-center gap-2">
                 <span className="text-accent">🤖</span>
-                <span className="font-semibold text-neutral">ARIA</span>
+                <span className="font-semibold text-neutral">KAI</span>
               </div>
               <button
                 onClick={toggleSpeech}
@@ -143,7 +143,7 @@ export default function AriaAssistant() {
               <input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask ARIA a question..."
+                placeholder="Ask KAI a question..."
                 className="flex-1 rounded-full border border-accent/30 bg-transparent px-3 py-2 text-sm text-neutral placeholder:text-neutral/40 focus:border-accent focus:outline-none"
               />
               {isSupported && (

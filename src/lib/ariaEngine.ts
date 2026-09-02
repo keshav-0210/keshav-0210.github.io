@@ -22,13 +22,13 @@ const rules: Rule[] = [
   {
     keywords: ['hello', 'hi', 'hey', 'greetings'],
     handler: () => ({
-      text: `Hey, I'm ARIA — ${profile.displayName}'s digital assistant. Ask me about his research, projects, experience, education, or how to get in touch.`,
+      text: `Hey, I'm KAI — ${profile.displayName}'s digital assistant. Ask me about his research, projects, experience, education, or how to get in touch.`,
     }),
   },
   {
     keywords: ['who are you', 'what are you', 'your name'],
     handler: () => ({
-      text: `I'm ARIA, a rule-based assistant built into ${profile.displayName}'s site. I answer using his real profile data — no guessing, no hallucination.`,
+      text: `I'm KAI, a rule-based assistant built into ${profile.displayName}'s site. I answer using his real profile data — no guessing, no hallucination.`,
     }),
   },
   {
