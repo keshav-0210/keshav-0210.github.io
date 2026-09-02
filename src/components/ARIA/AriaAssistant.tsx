@@ -31,8 +31,9 @@ export default function AriaAssistant() {
     if (!speakEnabled || typeof window === 'undefined' || !window.speechSynthesis) return;
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.rate = 1.02;
-    utterance.pitch = 1.0;
+    utterance.rate = 1.15;
+	utterance.pitch = 0.95;
+	utterance.volume = 1.0;
     window.speechSynthesis.speak(utterance);
   };
 
