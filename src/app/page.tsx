@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import AboutSection from '@/components/About/Identity';
@@ -17,6 +17,7 @@ import { SOUNDS } from '@/lib/constants';
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showContent, setShowContent] = useState(false);
+  const hasPlayedStartup = useRef(false);
   const { play, isMuted, toggleMute } = useSound();
 
   useEffect(() => {
@@ -27,8 +28,10 @@ export default function Home() {
 
     const contentTimer = setTimeout(() => {
       setShowContent(true);
-      // Play startup sound
-      play(SOUNDS.startup);
+      if (!hasPlayedStartup.current) {
+        hasPlayedStartup.current = true;
+        play(SOUNDS.startup);
+      }
     }, 2500);
 
     return () => {

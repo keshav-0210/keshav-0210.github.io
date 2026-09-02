@@ -20,6 +20,9 @@ export default function AriaAssistant() {
   const [messages, setMessages] = useState<Message[]>([WELCOME]);
   const [input, setInput] = useState('');
   const [speakEnabled, setSpeakEnabled] = useState(true);
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+  const [voiceName, setVoiceName] = useState('');
+  const speakEnabledRef = useRef(true);
   const scrollRef = useRef<HTMLDivElement>(null);
   const { startListening, stopListening, isListening, isSupported } = useVoice();
 
@@ -27,14 +30,31 @@ export default function AriaAssistant() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
   }, [messages, isOpen]);
 
+  useEffect(() => {
+    if (!window.speechSynthesis) return;
+    const loadVoices = () => setVoices(window.speechSynthesis.getVoices());
+    loadVoices();
+    window.speechSynthesis.addEventListener('voiceschanged', loadVoices);
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', loadVoices);
+  }, []);
+
   const speak = (text: string) => {
-    if (!speakEnabled || typeof window === 'undefined' || !window.speechSynthesis) return;
+    if (!speakEnabledRef.current || typeof window === 'undefined' || !window.speechSynthesis) return;
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.rate = 1.15;
-	utterance.pitch = 0.95;
-	utterance.volume = 1.0;
+    const selectedVoice = voices.find((voice) => voice.name === voiceName);
+    if (selectedVoice) utterance.voice = selectedVoice;
+    utterance.rate = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ? 1.35 : 1.15;
+    utterance.pitch = 0.95;
+    utterance.volume = 1;
     window.speechSynthesis.speak(utterance);
+  };
+
+  const toggleSpeech = () => {
+    const next = !speakEnabledRef.current;
+    speakEnabledRef.current = next;
+    setSpeakEnabled(next);
+    if (!next) window.speechSynthesis?.cancel();
   };
 
   const handleAsk = (raw: string) => {
@@ -88,7 +108,7 @@ export default function AriaAssistant() {
                 <span className="font-semibold text-neutral">ARIA</span>
               </div>
               <button
-                onClick={() => setSpeakEnabled((v) => !v)}
+                onClick={toggleSpeech}
                 title={speakEnabled ? 'Voice output on' : 'Voice output off'}
                 className="text-sm text-accent/70 hover:text-accent"
               >
@@ -146,6 +166,19 @@ export default function AriaAssistant() {
                 ➤
               </button>
             </form>
+            {voices.length > 0 && (
+              <select
+                value={voiceName}
+                onChange={(event) => setVoiceName(event.target.value)}
+                aria-label="Assistant voice"
+                className="mx-3 mb-3 w-[calc(100%-1.5rem)] bg-transparent text-xs text-neutral/70 focus:outline-none"
+              >
+                <option value="">Default device voice</option>
+                {voices.map((voice) => (
+                  <option key={voice.name} value={voice.name}>{voice.name}</option>
+                ))}
+              </select>
+            )}
           </motion.div>
         )}
       </AnimatePresence>

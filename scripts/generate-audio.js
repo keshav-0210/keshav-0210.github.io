@@ -58,36 +58,21 @@ function generateWAV(frequency, duration, volume = 0.3) {
 }
 
 /**
- * Generate a startup chime (ascending tones)
+ * Generate a single digital startup pulse.
  */
 function generateStartupSound() {
   const sampleRate = 44100;
-  const totalDuration = 1.0; // 1 second
-  const chimes = [
-    { freq: 523.25, duration: 0.15 },  // C5
-    { freq: 659.25, duration: 0.15 },  // E5
-    { freq: 783.99, duration: 0.4 },   // G5
-  ];
-
-  let totalSamples = 0;
-  chimes.forEach(chime => {
-    totalSamples += Math.floor(sampleRate * chime.duration);
-  });
+  const totalSamples = Math.floor(sampleRate * 0.65);
 
   const buffer = Buffer.alloc(totalSamples * 2);
-  let offset = 0;
-
-  chimes.forEach(chime => {
-    const samples = Math.floor(sampleRate * chime.duration);
-    for (let i = 0; i < samples; i++) {
-      // Fade in/out for smooth transitions
-      const t = i / samples;
-      const envelope = Math.sin(t * Math.PI);
-      const sample = Math.sin((offset + i) / sampleRate * chime.freq * 2 * Math.PI) * envelope * 0.4 * 0x7FFF;
-      buffer.writeInt16LE(Math.max(-0x8000, Math.min(0x7FFF, sample)), offset * 2 + i * 2);
-    }
-    offset += samples;
-  });
+  for (let i = 0; i < totalSamples; i++) {
+    const t = i / sampleRate;
+    const progress = i / totalSamples;
+    const frequency = 280 + progress * 520;
+    const envelope = Math.pow(1 - progress, 2) * Math.min(progress * 24, 1);
+    const sample = (Math.sin(2 * Math.PI * frequency * t) + 0.25 * Math.sin(2 * Math.PI * frequency * 2 * t)) * envelope * 0.32 * 0x7FFF;
+    buffer.writeInt16LE(Math.max(-0x8000, Math.min(0x7FFF, sample)), i * 2);
+  }
 
   const header = Buffer.alloc(44);
   header.write('RIFF', 0);
