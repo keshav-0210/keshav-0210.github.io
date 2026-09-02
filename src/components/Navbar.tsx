@@ -40,7 +40,7 @@ export default function Navbar({ currentSection = SECTIONS.HOME }: NavbarProps) 
           whileHover={{ scale: 1.05 }}
           className="text-2xl font-bold text-gradient"
         >
-          K.
+          KS
         </motion.a>
 
         {/* Desktop Navigation */}

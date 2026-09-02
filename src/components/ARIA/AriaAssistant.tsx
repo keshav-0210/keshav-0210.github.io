@@ -44,7 +44,7 @@ export default function AriaAssistant() {
     const utterance = new SpeechSynthesisUtterance(text);
     const selectedVoice = voices.find((voice) => voice.name === voiceName);
     if (selectedVoice) utterance.voice = selectedVoice;
-    utterance.rate = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ? 1.35 : 1.15;
+    utterance.rate = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ? 1.1 : 1.15;
     utterance.pitch = 0.95;
     utterance.volume = 1;
     window.speechSynthesis.speak(utterance);
