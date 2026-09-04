@@ -105,7 +105,7 @@ export default function AboutSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { label: 'Students Mentored', value: '80+' },
-                { label: 'Postgraduate CGPA', value: '8.56' },
+                { label: 'Postgraduate CGPA', value: '9.0' },
                 { label: 'Undergraduate CGPA', value: '9.02' },
               ].map((fact, idx) => (
                 <motion.div
